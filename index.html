@@ -10,49 +10,11 @@
 </head>
 <body>
 
-    <div id="main_container">
-        
-        <div class="header">
-            <div id="question_number">question n°1/10</div>
-            <div id="score">score : 0</div>
-        </div>
-
-        <div id="question"></div>
-
-        <div id="correction_container">
-            <div id="correction_text"></div>
-            <div id="correction_time_slider"></div>
-        </div>
-
-        <div id="answer_input"></div>
-        
-        <div class="numpad" id="numpad">
-            <div class="numpad-button" id="button_0" onclick="numpad.write('0')">0</div>
-            <div class="numpad-button" id="button_1" onclick="numpad.write('1')">1</div>
-            <div class="numpad-button" id="button_2" onclick="numpad.write('2')">2</div>
-            <div class="numpad-button" id="button_3" onclick="numpad.write('3')">3</div>
-            <div class="numpad-button" id="button_4" onclick="numpad.write('4')">4</div>
-            <div class="numpad-button" id="button_5" onclick="numpad.write('5')">5</div>
-            <div class="numpad-button" id="button_6" onclick="numpad.write('6')">6</div>
-            <div class="numpad-button" id="button_7" onclick="numpad.write('7')">7</div>
-            <div class="numpad-button" id="button_8" onclick="numpad.write('8')">8</div>
-            <div class="numpad-button" id="button_9" onclick="numpad.write('9')">9</div>
-            <div class="numpad-button" id="button_dot" onclick="numpad.write('.')">.</div>
-            <div class="numpad-button" id="button_sign" onclick="numpad.toggle_sign()">+|-</div>
-            <div class="numpad-button" id="button_raz" onclick="numpad.reset()">C</div>
-            <div class="numpad-button" id="button_del" onclick="numpad.delete()">del</div>
-            <div class="numpad-button" id="button_ok" onclick="enter()">ok</div>
+    <div class="main_container">
+        <div class="quizz">
+            <div class="quizz_title">Multiplication Table</div>
+            <div class="quizz_descri">Some multiplication tables from 1 to 10. Good luck !</div>
+            <div class="quizz_settings_button">o</div>
         </div>
     </div>
-
-
-    <script src="numpad.js"></script>
-    <script src="quizz.js"></script>
-    <script src="display.js"></script>
-    <script src="main.js"></script>
-    <script src="sleep.js"></script>
-    <script src="bind_key_events.js"></script>
-    
-
 </body>
-</html>
