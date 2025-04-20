@@ -1,0 +1,47 @@
+@keyframes shake {
+    0%   {left:0px;}
+    20%   {left:10px;}
+    40%   {left:-10px;}
+    60%   {left:10px;}
+    80%   {left:-10px;}
+    100%  {left:0;}
+}
+
+@keyframes zoom {
+    0%    {width: var(--numpad-width)}
+    15%   {width: 260px}
+    30%   {width: var(--numpad-width)}
+    45%   {width: 260px}
+    60%   {width: 270px}
+    100%  {width: var(--numpad-width)}
+}
+
+div#answer_input {
+    background-color: var(--gris);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+    width: var(--numpad-width);
+    height: 50px;
+    min-height: 20px;
+    margin-top: auto;
+
+    position: relative;
+}
+
+#answer_input.correct_answer {
+    background-color: rgb(131, 233, 131);
+    animation-name: zoom;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+#answer_input.wrong_answer {
+    background-color: rgb(255, 130, 130);
+    animation-name: shake;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}

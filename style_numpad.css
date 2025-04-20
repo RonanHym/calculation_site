@@ -1,0 +1,98 @@
+div#numpad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: var(--numpad-width);
+    height: var(--numpad-height);
+}
+
+div.numpad-button {
+    background-color: var(--gris);
+    border-radius: 10px;
+    text-align: center;
+    vertical-align: middle;
+    min-height: 20px;
+}
+
+#button_1 {
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+
+#button_2 {
+    grid-column: 2 / 3;
+    grid-row: 1;
+}
+
+#button_3 {
+    grid-column: 3 / 4;
+    grid-row: 1;
+}
+
+#button_4 {
+    grid-column: 1 / 2;
+    grid-row: 2;
+}
+
+#button_5 {
+    grid-column: 2 / 3;
+    grid-row: 2;
+}
+
+#button_6 {
+    grid-column: 3 / 4;
+    grid-row: 2;
+}
+
+#button_7 {
+    grid-column: 1 / 2;
+    grid-row: 3;
+}
+
+#button_8 {
+    grid-column: 2 / 3;
+    grid-row: 3;
+}
+
+#button_9 {
+    grid-column: 3 / 4;
+    grid-row: 3;
+}
+
+#button_0 {
+    grid-column: 3;
+    grid-row: 4;
+}
+
+#button_dot {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+#button_sign {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+#button_raz {
+    grid-column: 4;
+    grid-row: 1;
+}
+
+#button_del {
+    grid-column: 4;
+    grid-row: 2;
+}
+
+#button_ok {
+    grid-column: 4;
+    grid-row: 3 / 5;
+}
+
+.numpad-button:hover {
+    background-color: var(--gris-fonce);
+}
+
+.numpad-button:active {
+    background-color: var(--violet-pale);
+}
