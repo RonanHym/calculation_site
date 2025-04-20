@@ -1,4 +1,6 @@
 
+let display_correction_time = 1500; // in ms.
+
 /** Afficher le text d'une question d'un quizz.
  * Consiste à mettre à jour le texte d'un élément html avec le texte de la question courant.
  */
@@ -29,11 +31,21 @@ function maj_entry() {
 async function display_correction(correct_answer) {
     // on ajoute "correct_answer" comme classe css à l'objet ou "wrong_answer" si correct_answer est faux
     let style_class_to_add = correct_answer ? "correct_answer" : "wrong_answer";
+    let commentary_text = correct_answer ? "bonne réponse !" : "tu dois faire mieuuuux..."
+    
     document.getElementById("answer_input").classList.add(style_class_to_add);
     display_score();
+    document.getElementById("correction_container").style.display = "block";
+    document.getElementById("correction_text").textContent = commentary_text;
+
     numpad.lock();
-    await sleep(1500); // Attend 2 secondes
+
+    // attendre le temps choisi pour la correction
+    await sleep(display_correction_time);
+    
+    // on met à jour après le temps "temps de correction"
     document.getElementById("answer_input").classList.remove(style_class_to_add);
+    document.getElementById("correction_container").style.display = "none";
     display_question_number();
     display_question();
     numpad.unlock();

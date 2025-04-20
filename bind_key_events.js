@@ -5,7 +5,6 @@ document.addEventListener("keydown", (event) => {
     // console.log(event.key);
     switch (event.key) {
         case "Enter":
-            console.log("on va exécuter Enter dans bind_key_events")
             enter();
             break;
         case "1":

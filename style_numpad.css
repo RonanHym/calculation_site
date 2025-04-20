@@ -8,7 +8,7 @@ div#numpad {
 
 div.numpad-button {
     background-color: var(--gris);
-    border-radius: 10px;
+    border-radius: var(--border-radius);
     text-align: center;
     vertical-align: middle;
     min-height: 20px;
