@@ -1,4 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+
 html {
+    /* font-family:'Courier New', Courier, monospace; */
+    font-family: "DM Mono", serif;
+
     --gris: rgb(220, 220, 220);
     --gris-fonce: rgb(200, 200, 200);
     --violet: purple;
@@ -64,6 +70,7 @@ div#answer_input {
     margin-bottom: 20px;
     width: var(--numpad-width);
     height: 50px;
+    min-height: 20px;
     margin-top: auto;
 
     position: relative;
@@ -87,11 +94,10 @@ div#answer_input {
 
 div.numpad-button {
     background-color: var(--gris);
-    /* color: antiquewhite; */
     border-radius: 10px;
-    /* box-shadow: 0px 3px rgba(136, 136, 136, 1); */
     text-align: center;
     vertical-align: middle;
+    min-height: 20px;
 }
 
 #button_1 {
@@ -167,7 +173,6 @@ div.numpad-button {
 #button_ok {
     grid-column: 4;
     grid-row: 3 / 5;
-    /* background-color: var(--gris-fonce); */
 }
 
 .numpad-button:hover {

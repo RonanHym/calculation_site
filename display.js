@@ -32,7 +32,7 @@ async function display_correction(correct_answer) {
     document.getElementById("answer_input").classList.add(style_class_to_add);
     display_score();
     numpad.lock();
-    await sleep(2000); // Attend 2 secondes
+    await sleep(1500); // Attend 2 secondes
     document.getElementById("answer_input").classList.remove(style_class_to_add);
     display_question_number();
     display_question();

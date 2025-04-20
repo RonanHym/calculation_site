@@ -35,7 +35,7 @@ function create_random_multiplication(borne_min1, borne_max1, borne_min2, borne_
 
 function generator_multiplication_table_question() {
     [n1, n2, result] = create_random_multiplication(1, 10, 1, 10);
-    return [n1.toString() + " × " + n2.toString(), result];
+    return [n1.toString() + "×" + n2.toString(), result];
 }
 
 
