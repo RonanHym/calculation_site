@@ -28,6 +28,12 @@ div#answer_input {
     margin-top: auto;
 
     position: relative;
+
+    /* rendre le texte dans les boutons non sélectable : */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Standard */
 }
 
 #answer_input.correct_answer {

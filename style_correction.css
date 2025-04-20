@@ -9,6 +9,12 @@ div#correction_container {
     /* border-radius: var(--border-radius); */
     width: var(--numpad-width);
     height: 20px;
+
+    /* rendre le texte dans les boutons non sélectable : */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Standard */
 }
 
 div#correction_time_slider {

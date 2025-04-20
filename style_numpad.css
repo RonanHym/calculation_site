@@ -4,6 +4,12 @@ div#numpad {
     gap: 10px;
     width: var(--numpad-width);
     height: var(--numpad-height);
+
+    /* rendre le texte dans les boutons non sélectable : */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Standard */
 }
 
 div.numpad-button {
