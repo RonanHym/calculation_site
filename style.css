@@ -32,8 +32,8 @@ div#question {
 }
 
 @keyframes from_left_growing {
-    0%    {left: 0px; width: 0px}
-    100%  {left: 0px; width: var(--numpad-width)}
+    from  {width: 0px}
+    to    {width: var(--numpad-width)}
 }
 
 div#correction_container {
@@ -49,7 +49,7 @@ div#correction_time_slider {
     width: var(--numpad-width);
     height: 20px;
     position: relative;
-    left: calc(var(--numpad-width));
+    width: var(--numpad-width);
     animation-name: from_left_growing;
     animation-duration: 1.51s;
     animation-iteration-count: 1;
