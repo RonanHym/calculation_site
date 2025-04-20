@@ -1,6 +1,6 @@
 html {
     --gris: rgb(220, 220, 220);
-    --gris-fonce: rgb(121, 121, 121);
+    --gris-fonce: rgb(200, 200, 200);
     --violet: purple;
     --violet-pale: rgb(255, 191, 255);
 
@@ -171,5 +171,9 @@ div.numpad-button {
 }
 
 .numpad-button:hover {
+    background-color: var(--gris-fonce);
+}
+
+.numpad-button:active {
     background-color: var(--violet-pale);
 }
