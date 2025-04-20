@@ -20,6 +20,7 @@ div#main_container {
     flex-direction: column;
     align-items: center;
     height: 95vh;
+    gap: 10px;
 }
 
 div#header {
@@ -31,32 +32,26 @@ div#question {
     font-size: 50px;
 }
 
-@keyframes from_left_growing {
-    from  {width: 0px}
-    to    {width: var(--numpad-width)}
-}
 
-div#correction_container {
-    display: none;
-    border: solid 1px black;
-    /* border-radius: var(--border-radius); */
+div.quizz {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     width: var(--numpad-width);
-    height: 20px;
-}
-
-div#correction_time_slider {
+    border-radius: var(--border-radius);
     background-color: var(--violet-pale);
-    width: var(--numpad-width);
-    height: 20px;
-    position: relative;
-    width: var(--numpad-width);
-    animation-name: from_left_growing;
-    animation-duration: 1.51s;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
+    padding: 5px;
 }
 
-div#correction_text {
-    position: absolute;
-    z-index: 1;
+h3.quizz_title {
+    margin: 0;
+}
+
+div.quizz_texts {
+    display: flex;
+    flex-direction: column;
+}
+
+div.quizz_settings_button {
+    font-size: 40px;
 }
