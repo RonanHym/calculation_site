@@ -36,13 +36,16 @@ div#header {
     gap: 10px;
 }
 
-div#home_button {
+div.button {
     background-color: var(--button-bg-color);
+    border-radius: var(--border-radius);
 }
-#home_button:hover {
+
+div.button:hover {
     background-color: var(--button-bg-color-hover);
 }
-#home_button:active {
+
+div.button:active {
     background-color: var(--button-bg-color-active);
 }
 
@@ -52,13 +55,12 @@ div#question {
 }
 
 
+/* home page with preset quizz choice */
 div.quizz {
     display: flex;
     align-items: center;
     gap: 10px;
     width: var(--numpad-width);
-    border-radius: var(--border-radius);
-    background-color: var(--violet-pale);
     padding: 5px;
 }
 
