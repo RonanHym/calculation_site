@@ -10,6 +10,11 @@ html {
     --violet: purple;
     --violet-pale: rgb(255, 191, 255);
 
+    --main-color: var(--violet-pale);
+    --button-bg-color: var(--gris);
+    --button-bg-color-hover: var(--gris-fonce);
+    --button-bg-color-active: var(--main-color);
+
     --numpad-width: 250px;
     --numpad-height: 300px;
     --border-radius: 10px;
@@ -24,7 +29,21 @@ div#main_container {
 }
 
 div#header {
+    display: flex;
+    flex-direction: row;
     height: 30px;
+    /* width: var(--numpad-width); */
+    gap: 10px;
+}
+
+div#home_button {
+    background-color: var(--button-bg-color);
+}
+#home_button:hover {
+    background-color: var(--button-bg-color-hover);
+}
+#home_button:active {
+    background-color: var(--button-bg-color-active);
 }
 
 div#question {
