@@ -2,7 +2,8 @@ div#numpad {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-    width: var(--numpad-width);
+    /* width: var(--numpad-width); */
+    width: var(--width);
     height: var(--numpad-height);
 
     /* rendre le texte dans les boutons non sélectable : */

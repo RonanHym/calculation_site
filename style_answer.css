@@ -8,12 +8,12 @@
 }
 
 @keyframes zoom {
-    0%    {width: var(--numpad-width)}
-    15%   {width: 260px}
-    30%   {width: var(--numpad-width)}
-    45%   {width: 260px}
-    60%   {width: 270px}
-    100%  {width: var(--numpad-width)}
+    0%    {width: var(--width)}
+    15%   {width: calc(var(--width) + 10px)}
+    30%   {width: var(--width)}
+    45%   {width: calc(var(--width) + 10px)}
+    60%   {width: calc(var(--width) + 20px)}
+    100%  {width: var(--width)}
 }
 
 div#answer_input {
@@ -22,7 +22,7 @@ div#answer_input {
     text-align: center;
     font-size: 40px;
     margin-bottom: 20px;
-    width: var(--numpad-width);
+    width: var(--width);
     height: 50px;
     min-height: 20px;
     margin-top: auto;
