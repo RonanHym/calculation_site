@@ -9,12 +9,12 @@ function display_question() {
 }
 
 function display_score() {
-    document.getElementById("score").textContent = "score : " + quizz.get_score();
+    document.getElementById("score_value").textContent = quizz.get_score();
 }
 
 function display_question_number() {
     temp = "question n°" + quizz.get_actual_question_nb() + "/" + quizz.get_nb_questions();
-    document.getElementById("question_number").textContent = temp;
+    document.getElementById("question_number_value").textContent = quizz.get_actual_question_nb();
 }
 
 function display_end_quizz() {
