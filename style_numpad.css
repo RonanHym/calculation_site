@@ -7,6 +7,7 @@ div#numpad {
     height: var(--numpad-height);
 
     position: sticky;
+    bottom: -1px;
 
     /* rendre le texte dans les boutons non sélectable : */
     -webkit-user-select: none; /* Safari */
