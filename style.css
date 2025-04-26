@@ -33,7 +33,7 @@ div#vertical_container {
     flex-direction: column;
     align-items: center;
     /* height: 100%; */
-    height: 97vh;
+    /* height: 97vh; */
     gap: 10px;
     width: var(--width);
     max-width: var(--max-width);
