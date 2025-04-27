@@ -3,11 +3,10 @@ div#numpad {
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     /* width: var(--numpad-width); */
-    width: var(--width);
+    /* width: var(--width); */
+    width: 95%;
     height: var(--numpad-height);
 
-    /* position: sticky;
-    bottom: -1px; */
 
     /* rendre le texte dans les boutons non sélectable : */
     -webkit-user-select: none; /* Safari */

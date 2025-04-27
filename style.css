@@ -9,7 +9,9 @@ html {
     --gris-fonce: rgb(200, 200, 200);
     --violet: purple;
     --violet-pale: rgb(255, 191, 255);
+    --blanc: white;
 
+    --bg-color: var(--blanc);
     --main-color: var(--violet-pale);
     --button-bg-color: var(--gris);
     --button-bg-color-hover: var(--gris-fonce);
@@ -26,6 +28,7 @@ div#main_container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--bg-color);
 }
 
 div#vertical_container {
@@ -51,11 +54,15 @@ div#header {
 div#footer {
     display:flex;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
-    position: sticky;
+    position: fixed;
     bottom: 0;
     width: var(--width);
     max-width: var(--max-width);
+    padding: 5px;
+    padding-top: 0px;
+    background-color: var(--bg-color);
 }
 
 div.header_item {
