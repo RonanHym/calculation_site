@@ -8,21 +8,33 @@
 }
 
 @keyframes zoom {
-    0%    {width: var(--width)}
-    15%   {width: calc(var(--width) + 10px); left:-5px}
-    30%   {width: var(--width); left: 0}
-    45%   {width: calc(var(--width) + 10px); left:-5px}
-    60%   {width: calc(var(--width) + 20px); left:-10px}
-    100%  {width: var(--width); left: 0}
+    0%    {width: var(--input-width)}
+    15%   {width: calc(var(--input-width) + 10px)}
+    30%   {width: var(--input-width)}
+    45%   {width: calc(var(--input-width) + 10px)}
+    60%   {width: calc(var(--input-width) + 20px)}
+    100%  {width: var(--input-width)}
+}
+
+@keyframes zoom2 {
+    0%    {width: var(--input-width)}
+    10%   {width: calc(var(--input-width) - 10px)}
+    40%   {width: calc(var(--input-width) - 10px)}
+    45%   {width: var(--input-width)}
+    50%   {width: calc(var(--input-width) + 10px)}
+    55%   {width: var(--input-width)}
+    60%   {width: calc(var(--input-width) + 10px)}
+    100%  {width: var(--input-width)}
 }
 
 div#answer_input {
+    --input-width: 95%;
     background-color: var(--gris);
     border-radius: var(--border-radius);
     text-align: center;
     font-size: 40px;
     margin-bottom: 20px;
-    width: 95%;
+    width: var(--input-width);
     height: 50px;
     min-height: 20px;
     margin-top: auto;
