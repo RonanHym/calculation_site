@@ -46,9 +46,9 @@ div#vertical_container {
 div#header {
     display: flex;
     flex-direction: row;
-    height: 30px;
     /* width: var(--numpad-width); */
     gap: 10px;
+    background-color: var(--gris);
 }
 
 div#footer {
