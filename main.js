@@ -1,4 +1,4 @@
-
+// main.js : main file of application
 
 var numpad = new Numpad();
 
@@ -19,11 +19,6 @@ for (let i = 0 ; i < document.getElementById("numpad").children["length"]-1 ; i+
     */
 }
 
-
-/** générer un entier aléatoire entre borne_min et born_max */
-function randint(borne_min, borne_max) {
-    return Math.floor(Math.random() * (borne_max - borne_min + 1)) + borne_min;
-}
 
 /** générer un 3-uplet aléatoire [n1, n2, result] tel que n1 * n2 = result */
 function create_random_multiplication(borne_min1, borne_max1, borne_min2, borne_max2) {
@@ -46,17 +41,12 @@ function enter() {
 }
 
 
-// // valider la réponse lorsque l'on appuie sur la touche Entrée
-// document.addEventListener("keydown", (event) => {
-//     if (event.key == "Enter") {
-//         enter();
-//     }
-// })
-
 
 
 var quizz = new Quizz()
 nb_questions = 10;
+
+decode_params();
 
 // créer les nb_questions questions du quizz
 for (let i = 0 ; i < nb_questions ; i++) {
